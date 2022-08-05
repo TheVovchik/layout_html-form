@@ -1,1 +1,14 @@
 /* styles go here */
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.select__cars {
+  overflow: hidden;
+}
