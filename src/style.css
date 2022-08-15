@@ -5,7 +5,7 @@
   margin-bottom: 20px;
 }
 
-label:not(:last-child) {
+.form__label:not(:last-child) {
   margin-bottom: 10px;
 }
 

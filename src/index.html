@@ -16,15 +16,23 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label>
+        <label class="form__label">
           Surname:
-          <input type="text" name="Surname">
+          <input
+            type="text"
+            name="Surname"
+            required
+          >
         </label>
-        <label>
+        <label class="form__label">
           Name:
-          <input type="text" name="Name">
+          <input
+            type="text"
+            name="Name"
+            required
+          >
         </label>
-        <label>
+        <label class="form__label">
           How old are You?
           <input
             type="number"
@@ -34,7 +42,7 @@
             value="12"
           >
         </label>
-        <label>
+        <label class="form__label">
           Full date of birth:
           <input
             type="date"
@@ -42,83 +50,87 @@
             placeholder="mm/dd/yyyy"
           >
         </label>
-        <label>
+        <label class="form__label">
           I accept the term of the agreement
           <input type="checkbox" name="Term">
         </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label>
+        <label class="form__label">
           E-mail:
           <input
             type="email"
             name="Email"
             placeholder="email@example.com"
-            >
+          >
         </label>
-        <label>
+        <label class="form__label">
           Password:
           <input type="password" name="Password">
         </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label>
+        <label class="form__label">
           Do you love cats?
           <input
-          type="radio"
-          name="cats"
-          value="Yes"> Yes
+            type="radio"
+            name="cats"
+            value="Yes"
+          >
+            Yes
           <input
-          type="radio"
-          name="cats"
-          value="No"> No
+            type="radio"
+            name="cats"
+            value="No"
+          >
+            No
         </label>
-        <label>
+        <label class="form__label">
           What is your favorite color?
           <input type="color" name="color">
         </label>
-        <label>
+        <label class="form__label">
           What time do you go to bed?
           <input type="time" name="sliptime">
         </label>
-        <label>
+        <label class="form__label">
           What are your favorite brand of cars?
           <select
-          class="select__cars"
-          name="cars"
-          multiple
+            class="select__cars"
+            name="cars"
+            multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label>
+        <label class="form__label">
           How do you rate our work?
           <input
-          type="range"
-          name="range"
-          min="1"
-          max="10"
-          step="1"
-          value="1"
+            type="range"
+            name="range"
+            min="1"
+            max="10"
+            step="1"
+            value="1"
           >
         </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <label>
+        <label class="form__label">
           Comments:
           <textarea
-          name="Comments"
-          cols="16"
-          rows="2"
+            name="Comments"
+            cols="16"
+            rows="2"
           >
           </textarea>
         </label>
-        <label>
+        <label class="form__label">
           Would you recommend us?
           <select name="recommend">
             <option value="yes">yes</option>
